@@ -17,7 +17,6 @@ class _HomePageState extends State<HomePage> {
 
   void sendingDataToApi() {
     setState(() {
-      print(inputdata.text);
       weatherData = HomeService().getWeatherDataUsingCity(inputdata.text);
       inputdata.clear();
     });
